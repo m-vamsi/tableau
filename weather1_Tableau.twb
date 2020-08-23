@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='weatherAUS' inline='true' name='federated.0ztzqla1oa263x1bhmwk70pm2td6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='weatherAUS' name='textscan.0uncagq1pblhh417oban5143nk7d'>
+            <connection class='textscan' directory='C:/Users/india/OneDrive/Desktop' filename='weatherAUS.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0uncagq1pblhh417oban5143nk7d' name='weatherAUS.csv' table='[weatherAUS#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Location' ordinal='1' />
+            <column datatype='real' name='MinTemp' ordinal='2' />
+            <column datatype='real' name='MaxTemp' ordinal='3' />
+            <column datatype='real' name='Rainfall' ordinal='4' />
+            <column datatype='string' name='Evaporation' ordinal='5' />
+            <column datatype='string' name='Sunshine' ordinal='6' />
+            <column datatype='string' name='WindGustDir' ordinal='7' />
+            <column datatype='integer' name='WindGustSpeed' ordinal='8' />
+            <column datatype='string' name='WindDir9am' ordinal='9' />
+            <column datatype='string' name='WindDir3pm' ordinal='10' />
+            <column datatype='integer' name='WindSpeed9am' ordinal='11' />
+            <column datatype='integer' name='WindSpeed3pm' ordinal='12' />
+            <column datatype='integer' name='Humidity9am' ordinal='13' />
+            <column datatype='integer' name='Humidity3pm' ordinal='14' />
+            <column datatype='real' name='Pressure9am' ordinal='15' />
+            <column datatype='real' name='Pressure3pm' ordinal='16' />
+            <column datatype='string' name='Cloud9am' ordinal='17' />
+            <column datatype='string' name='Cloud3pm' ordinal='18' />
+            <column datatype='real' name='Temp9am' ordinal='19' />
+            <column datatype='real' name='Temp3pm' ordinal='20' />
+            <column datatype='string' name='RainToday' ordinal='21' />
+            <column datatype='real' name='RISK_MM' ordinal='22' />
+            <column datatype='string' name='RainTomorrow' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MinTemp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MinTemp]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>MinTemp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaxTemp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MaxTemp]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>MaxTemp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rainfall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rainfall]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Rainfall</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Evaporation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Evaporation]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Evaporation</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sunshine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sunshine]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Sunshine</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindGustDir</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WindGustDir]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindGustDir</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindGustSpeed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WindGustSpeed]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindGustSpeed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindDir9am</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WindDir9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindDir9am</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindDir3pm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WindDir3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindDir3pm</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindSpeed9am</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WindSpeed9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindSpeed9am</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WindSpeed3pm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WindSpeed3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>WindSpeed3pm</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humidity9am</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Humidity9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Humidity9am</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humidity3pm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Humidity3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Humidity3pm</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressure9am</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressure9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Pressure9am</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressure3pm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressure3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Pressure3pm</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cloud9am</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cloud9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Cloud9am</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cloud3pm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cloud3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Cloud3pm</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temp9am</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temp9am]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Temp9am</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temp3pm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temp3pm]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>Temp3pm</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RainToday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RainToday]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>RainToday</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISK_MM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISK_MM]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>RISK_MM</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RainTomorrow</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RainTomorrow]</local-name>
+            <parent-name>[weatherAUS.csv]</parent-name>
+            <remote-alias>RainTomorrow</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max Temp' datatype='real' name='[MaxTemp]' role='measure' type='quantitative' />
+      <column caption='Min Temp' datatype='real' name='[MinTemp]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Risk Mm' datatype='real' name='[RISK_MM]' role='measure' type='quantitative' />
+      <column caption='Rain Today' datatype='string' name='[RainToday]' role='dimension' type='nominal' />
+      <column caption='Rain Tomorrow' datatype='string' name='[RainTomorrow]' role='dimension' type='nominal' />
+      <column caption='Wind Gust Dir' datatype='string' name='[WindGustDir]' role='dimension' type='nominal' />
+      <column caption='Wind Gust Speed' datatype='integer' name='[WindGustSpeed]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.482759' measure-ordering='alphabetic' measure-percentage='0.517241' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weatherAUS' name='federated.0ztzqla1oa263x1bhmwk70pm2td6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ztzqla1oa263x1bhmwk70pm2td6'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rainfall]' role='measure' type='quantitative' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rainfall]' derivation='Sum' name='[sum:Rainfall:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0ztzqla1oa263x1bhmwk70pm2td6].[tyr:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ztzqla1oa263x1bhmwk70pm2td6].[sum:Rainfall:qk]</rows>
+        <cols>([federated.0ztzqla1oa263x1bhmwk70pm2td6].[none:Location:nk] / [federated.0ztzqla1oa263x1bhmwk70pm2td6].[tyr:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{5EA344B8-88DB-4264-A6B7-FD8BDAE6F796}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ztzqla1oa263x1bhmwk70pm2td6].[tyr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ztzqla1oa263x1bhmwk70pm2td6].[none:Location:nk]</field>
+            <field>[federated.0ztzqla1oa263x1bhmwk70pm2td6].[tyr:Date:ok]</field>
+            <field>[federated.0ztzqla1oa263x1bhmwk70pm2td6].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7A091220-DAA3-4FA8-A82A-F7B999FEB6A5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
